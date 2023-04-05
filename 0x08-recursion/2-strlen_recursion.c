@@ -2,6 +2,7 @@
 /**
  * _strlen_recursion - this is a function that count the lenght of a string
  * @s: this is a parameter
+ * Return: is len
  */
 int _strlen_recursion(char *s)
 {
