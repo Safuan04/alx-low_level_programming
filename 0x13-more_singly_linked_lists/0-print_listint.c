@@ -7,7 +7,7 @@
  * print_listint - this is a function that prints lists
  * @h: this is a linked list as a parameter
  *
- * Return: this is 
+ * Return: this is
  */
 
 size_t print_listint(const listint_t *h)
