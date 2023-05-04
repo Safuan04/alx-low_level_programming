@@ -3,6 +3,7 @@
  * clear_bit - this is a function
  * @index: this is a parameter
  * @n: this is parameter
+ * Return: this 1
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
