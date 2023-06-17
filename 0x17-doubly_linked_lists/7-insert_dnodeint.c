@@ -2,7 +2,7 @@
 
 /**
  * insert_dnodeint_at_index - is a func that inserts new node
- * @h: Double pointer 
+ * @h: Double pointer
  * @idx: Index
  * @n: new node
  * Return: new_node
