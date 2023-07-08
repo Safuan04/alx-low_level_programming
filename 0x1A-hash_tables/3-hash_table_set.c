@@ -15,13 +15,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index, j;
 	char *value_cp, *key_cp;
 
-	if (ht || key || value || strlen(key) == 0)
+	if (!ht || !key || !value || strlen(key) == 0)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
 
 	value_cp = strdup(value);
-	if (value_cp)
+	if (!value_cp)
 		return (0);
 
 	for (j = index; ht->array[j] != NULL; j++)
@@ -35,11 +35,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 	new_elmnt = malloc(sizeof(hash_node_t));
-	if (new_elmnt)
+	if (!new_elmnt)
 		return (0);
 
 	key_cp = strdup(key);
-	if (key_cp)
+	if (!key_cp)
 	{
 		free(new_elmnt);
 		return (0);
