@@ -4,7 +4,7 @@
   * of integers using binary search.
   * @array: A pointer to the first element of the array to search.
   * @left: The starting index of the [sub]array to search.
-  * @right: The ending index of the [sub]array to search.
+  * @forward: The ending index of the [sub]array to search.
   * @value: The value to search for.
   * Return: If the value is not present or the array is NULL, -1.
   * Otherwise, the index where the value is located.
