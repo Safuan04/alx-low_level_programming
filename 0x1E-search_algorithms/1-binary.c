@@ -2,26 +2,27 @@
 /**
  * printing - this is a function that prints the array
  * @array:  is a pointer to the first element of the array to search in
- * @size: is the number of elements in array
+ * @backward: search in mid left
+ * @forward: search in mid right
 */
 void printing(int *array, int backward, int forward)
 {
-    int i;
+	int i;
 
-    printf("Searching in array: ");
+	printf("Searching in array: ");
 
-    for (i = backward; i <= forward; i++)
-    {
-        if (i < forward)
-        {
-            printf("%d, ", array[i]);
-        }
-        else
-        {
-            printf("%d", array[i]);
-        }
-    }
-    printf("\n");
+	for (i = backward; i <= forward; i++)
+	{
+		if (i < forward)
+		{
+			printf("%d, ", array[i]);
+		}
+		else
+		{
+			printf("%d", array[i]);
+		}
+	}
+	printf("\n");
 }
 
 /**
@@ -30,6 +31,7 @@ void printing(int *array, int backward, int forward)
  * @array:  is a pointer to the first element of the array to search in
  * @size: is the number of elements in array
  * @value: is the value to search for
+ * Return: the value we are searching for
 */
 int binary_search(int *array, size_t size, int value)
 {
@@ -40,7 +42,7 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-    	while (backward <= forward)
+		while (backward <= forward)
 	{
 		printing(array, backward, forward);
 
