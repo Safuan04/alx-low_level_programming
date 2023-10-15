@@ -1,7 +1,7 @@
 #include "search_algos.h"
 /**
  * printing - this is a function that prints the array
- * @array:  is a pointer to the first element of the array to search in
+ * @array: is a pointer to the first element of the array to search in
  * @backward: search in mid left
  * @forward: search in mid right
 */
@@ -42,7 +42,7 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-		while (backward <= forward)
+	while (backward <= forward)
 	{
 		printing(array, backward, forward);
 
